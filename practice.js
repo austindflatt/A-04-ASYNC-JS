@@ -27,3 +27,11 @@ fetchData()
 // 11. Call fetchData (which returns a promise) and use the async/await method to log the value the promise resolves with to the javascript console.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+async function showData(){
+	try {
+		const response = await fetchData();
+		console.log(response);
+	} catch (error) {
+		console.log(error);
+	}
+}
